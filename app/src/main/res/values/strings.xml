@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bacteria Wallpaper</string>
+    <string name="description">Living wallpaper full of bacteria. Yuck!</string>
+    
+    <string name="settings">Settings</string>
+    <string name="settings_title">Settings</string>
+    
+    <string name="settings_grid">Grid</string>
+    <string name="settings_grid_sticks">Stick to screen</string>
+    <string name="settings_grid_sticks_desc">Wallpaper sticks to physical screen and does not move with virtual screens.</string>
+    <string name="settings_grid_screens">Virtual screens</string>
+    <string name="settings_grid_screens_desc">Number of virtual screens your phone is using (this is ignored when sticking to screen)</string>
+    <string name="settings_grid_scale">Cell scale</string>
+    <string name="settings_grid_scale_desc">How large is one cell (has large impact on performance)</string>
+
+	<string name="settings_cell">Bacteria cells</string>
+	
+	<string name="settings_simulation">Life simulation</string>
+	<string name="settings_simulation_steps">Steps per cycle</string>
+	<string name="settings_simulation_steps_desc">Number of steps per life cycle. Larger numbers mean slower simulation and better performance.</string>
+	<string name="settings_simulation_speed">Slowdown</string>
+	<string name="settings_simulation_speed_desc">Sets simulation speed</string>
+	<string name="settings_simulation_fps">FPS</string>
+	<string name="settings_simulation_fps_desc">Frames per second (lower values save battery)</string>
+	<string name="settings_simulation_touch_size">Size of touch</string>
+	<string name="settings_simulation_touch_size_desc">How large area is infected when touching display</string>
+	<string name="settings_simulation_touch_dirt">Dirt amount</string>
+	<string name="settings_simulation_touch_dirt_desc">How many bacteria are added when touching display</string>
+	
+	<string name="settings_cell_3d">3D cells</string>
+    <string name="settings_cell_3d_desc">Bacteria appear more "3D"</string>
+    <string name="settings_cell_blur">Blur cells</string>
+    <string name="settings_cell_blur_desc">Bacteria appear more realistic</string>
+	<string name="settings_cell_color">Cell color</string>
+    <string name="settings_cell_coloring">Evolving color</string>
+    <string name="settings_cell_coloring_desc">Bacteria are evolving and changing their color.</string>
+    <string name="settings_cell_coloring_speed">Evolution speed</string>
+    <string name="settings_cell_coloring_speed_desc">How fast is the evolution (color changing)</string>
+    <string name="settings_cell_coloring_r">Red</string>
+    <string name="settings_cell_coloring_r_desc">Red part of color</string>
+    <string name="settings_cell_coloring_g">Green</string>
+    <string name="settings_cell_coloring_g_desc">Green part of color</string>
+    <string name="settings_cell_coloring_b">Blue</string>
+    <string name="settings_cell_coloring_b_desc">Blue part of color</string>
+    
+    <string name="settings_cell_glow">Cell glow</string>
+    <string name="settings_cell_glowing">Cells are glowing</string>
+    <string name="settings_cell_glowing_desc">Enables changes of cell visibility</string>
+    <string name="settings_cell_glowing_min">Minimal glow level</string>
+    <string name="settings_cell_glowing_min_desc">Value of minimal visibility</string>
+    <string name="settings_cell_glowing_range">Glow range</string>
+    <string name="settings_cell_glowing_range_desc">How much a cell can change it\'s visibility</string>
+</resources>
+

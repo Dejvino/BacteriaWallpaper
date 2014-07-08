@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/settings_title"
+        android:key="bacteria_settings">
+
+	<PreferenceCategory
+			android:title="@string/settings_grid">
+		<CheckBoxPreference
+	            android:key="grid_sticks"
+	            android:title="@string/settings_grid_sticks"
+	            android:summary="@string/settings_grid_sticks_desc"
+	            android:defaultValue="false" />
+	            
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="grid_screens"
+	 			android:title="@string/settings_grid_screens"
+	       		android:summary="@string/settings_grid_screens_desc"
+				android:dialogMessage="@string/settings_grid_screens_desc"
+	        	android:defaultValue="7"
+	        	android:text=" screens"
+	        	android:max="10" />
+	            
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="grid_scale"
+	 			android:title="@string/settings_grid_scale"
+	       		android:summary="@string/settings_grid_scale_desc"
+				android:dialogMessage="@string/settings_grid_scale_desc"
+	        	android:defaultValue="4"
+	        	android:text=" pixels"
+	        	android:max="20" />
+	    <!--<SeekBarPreference  
+                android:key="grid_scale"
+                android:defaultValue="4"
+                android:title="@string/settings_grid_scale" />-->   
+    </PreferenceCategory>
+    
+    <PreferenceCategory
+			android:title="@string/settings_simulation">
+		<com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="simulation_steps"
+	            android:title="@string/settings_simulation_steps"
+	            android:summary="@string/settings_simulation_steps_desc"
+				android:dialogMessage="@string/settings_simulation_steps"
+	        	android:defaultValue="3"
+	        	android:text=" steps per cycle"
+	        	android:max="100" />
+	            
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="simulation_speed"
+	 			android:title="@string/settings_simulation_speed"
+	       		android:summary="@string/settings_simulation_speed_desc"
+				android:dialogMessage="@string/settings_simulation_speed"
+	        	android:defaultValue="1000"
+	        	android:text=" units"
+	        	android:max="10000" />
+	        	
+	     <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="simulation_fps"
+	 			android:title="@string/settings_simulation_fps"
+	       		android:summary="@string/settings_simulation_fps_desc"
+				android:dialogMessage="@string/settings_simulation_fps"
+	        	android:defaultValue="15"
+	        	android:text=" FPS"
+	        	android:max="100" />
+	        	
+       	<com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="simulation_touch_size"
+	 			android:title="@string/settings_simulation_touch_size"
+	       		android:summary="@string/settings_simulation_touch_size_desc"
+				android:dialogMessage="@string/settings_simulation_touch_size_desc"
+	        	android:defaultValue="40"
+	        	android:text=" units"
+	        	android:max="100" />
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="simulation_touch_dirt"
+	 			android:title="@string/settings_simulation_touch_dirt"
+	       		android:summary="@string/settings_simulation_touch_dirt_desc"
+				android:dialogMessage="@string/settings_simulation_touch_dirt_desc"
+	        	android:defaultValue="1000"
+	        	android:text=" cells"
+	        	android:max="10000" />
+	        	
+	    <!--<SeekBarPreference  
+                android:key="grid_scale"
+                android:defaultValue="4"
+                android:title="@string/settings_grid_scale" />-->   
+    </PreferenceCategory>
+        
+    
+    <PreferenceCategory
+			android:title="@string/settings_cell_color">
+		<CheckBoxPreference
+	            android:key="cell_3d"
+	            android:title="@string/settings_cell_3d"
+	            android:summary="@string/settings_cell_3d_desc"
+	            android:defaultValue="true" />
+	            
+	    <CheckBoxPreference
+	            android:key="cell_blur"
+	            android:title="@string/settings_cell_blur"
+	            android:summary="@string/settings_cell_blur_desc"
+	            android:defaultValue="true" />
+	            
+	    <CheckBoxPreference
+	            android:key="cell_coloring"
+	            android:title="@string/settings_cell_coloring"
+	            android:summary="@string/settings_cell_coloring_desc"
+	            android:defaultValue="true" />
+	            
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="cell_coloring_speed"
+	 			android:title="@string/settings_cell_coloring_speed"
+	       		android:summary="@string/settings_cell_coloring_speed_desc"
+				android:dialogMessage="@string/settings_cell_coloring_speed_desc"
+	        	android:defaultValue="100"
+	        	android:text=" units"
+	        	android:max="500" />
+	            
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="cell_coloring_r"
+	 			android:title="@string/settings_cell_coloring_r"
+	       		android:summary="@string/settings_cell_coloring_r_desc"
+				android:dialogMessage="@string/settings_cell_coloring_desc"
+	        	android:defaultValue="60"
+	        	android:text="/255"
+	        	android:max="255" />
+       	<com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="cell_coloring_g"
+	 			android:title="@string/settings_cell_coloring_g"
+	       		android:summary="@string/settings_cell_coloring_g_desc"
+				android:dialogMessage="@string/settings_cell_coloring_desc"
+	        	android:defaultValue="255"
+	        	android:text="/255"
+	        	android:max="255" />
+       	<com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="cell_coloring_b"
+	 			android:title="@string/settings_cell_coloring_b"
+	       		android:summary="@string/settings_cell_coloring_b_desc"
+				android:dialogMessage="@string/settings_cell_coloring_desc"
+	        	android:defaultValue="60"
+	        	android:text="/255"
+	        	android:max="255" />
+    </PreferenceCategory>
+
+	<PreferenceCategory
+			android:title="@string/settings_cell_glow">
+	    <CheckBoxPreference
+	            android:key="cell_glowing"
+	            android:title="@string/settings_cell_glowing"
+	            android:summary="@string/settings_cell_glowing_desc"
+	            android:defaultValue="true" />
+	    <com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="cell_glowing_min"
+	 			android:title="@string/settings_cell_glowing_min"
+	       		android:summary="@string/settings_cell_glowing_min_desc"
+				android:dialogMessage="@string/settings_cell_glowing_min_desc"
+	        	android:defaultValue="70"
+	        	android:text="/100"
+	        	android:max="100" />
+       	<com.hlidskialf.android.preference.SeekBarPreference
+	    		android:key="cell_glowing_range"
+	 			android:title="@string/settings_cell_glowing_range"
+	       		android:summary="@string/settings_cell_glowing_range_desc"
+				android:dialogMessage="@string/settings_cell_glowing_range_desc"
+	        	android:defaultValue="30"
+	        	android:text="/100"
+	        	android:max="100" />
+    </PreferenceCategory>
+
+    <!--ListPreference
+            android:key="bacteria_"
+            android:title="@string/cube2_settings_title"
+            android:summary="@string/cube2_settings_summary"
+            android:entries="@array/cube2_shapenames"
+            android:entryValues="@array/cube2_shapeprefix" /-->
+
+</PreferenceScreen>
